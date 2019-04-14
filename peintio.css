@@ -1,0 +1,287 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('images/6.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("images/4.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("images/5.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+
+.thumbnail
+{
+    background-size:cover;
+    backgrond-repeat:no-repeat;
+    height:300px;
+    width:100%;
+}
+
+.thumbnail img {
+    height: 100%;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+ .header {
+    padding: 0 0 2em;
+    text-align: center;
+    align-content: center;
+}
+
+.logo{
+	float:left;
+        align-items: center;
+	margin-left:22em;
+        
+}
+.logo h1 a{
+	font-size:1.5em;
+	color:#212121;
+	text-decoration:none;
+}
+.logo h1 a span{
+	display: block;
+    font-size: .3em;
+    text-transform: capitalize;
+    letter-spacing: 13px;
+    padding-left: .5em;
+}
+
+a.act {
+    color: #ff9b05 !important;
+}
+
+.my-btn
+{
+   border: 3px solid black;
+   color:  black;
+}
+.btn-success{
+        background: none;
+	padding: 8px 12px;
+	border: 2px solid #d382f8 ;
+	color:  #d382f8;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
+	color:  #eecffc;
+	border-color: #eecffc;
+        background-color:#d382f8;
+}
+.btn-success:active, .btn-success.active {
+	border-color: #eecffc;
+	color: #eecffc;
+	box-shadow: none;
+        background-color:#d382f8;
+}
+.abc
+{
+    background-color: #d382f8;
+    color: white;
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 18px;
+    font-style: bold;
+}
+
+.navbar-default .navbar-nav > li > a{
+color: white;  /*Sets the text hover color on navbar*/
+}
+.navbar-default .navbar-nav > li > a:hover{
+color: black;
+background-color :#eecffc;/*Sets the text hover color on navbar*/
+}
+.navbar-default .navbar-nav > li > a:focus{
+color: black;
+background-color :#eecffc;/*Sets the text hover color on navbar*/
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active  {
+color: black; /*BACKGROUND color for active*/
+background-color :#eecffc;
+}
+
+
+img{
+        object-fit: cover;
+    }
+.details
+{
+     background-color:#f3e5f9;
+     color: Black;
+     font-family: Roboto;
+       
+}
+
+.search_nav
+{
+    float: center;
+    display: block;     
+    text-align: center;
+    border: none;
+    padding: none;
+    margin: none;
+    text-decoration: none;
+    font-size: 17px;
+}
+.dropdown-menu > li > a:hover{
+color: black;
+background-color :#eecffc;/*Sets the text hover color on navbar*/
+}
+.dropdown-menu > .active > a{
+color: black;
+background-color :#eecffc;/*Sets the text hover color on navbar*/
+}
+
+/*--search--*/
+.search{
+	position: relative;
+    display: inline-block;
+    float: left;
+    margin:3em 0 0 0;
+}
+label.icon-search {
+    color: #212121;
+	cursor: pointer;
+}
+.search_form{
+	position:absolute;
+	z-index:9999;
+	right:0;
+	top:15px;
+	overflow: hidden;
+	width: 20px;
+	height:0px;
+	background:#eecffc;
+	transition: height 0.2s ease-out 0.5s , top 0.2s ease-out 0.5s, padding 0.2s ease-out 0.5s, width 0.3s ease-out 0.2s;
+	-webkit-transition: height 0.2s ease-out 0.5s , top 0.2s ease-out 0.5s, padding 0.2s ease-out 0.5s, width 0.3s ease-out 0.2s;
+}
+.search_form form{
+	opacity:0;
+	transition:all 0.3s ease-out;
+	-webkit-transition:all 0.3s ease-out;
+}
+.search_form input[type='text']{
+	width: 380px;
+    padding: 10px;
+    outline: none;
+    font-size: 14px;
+    color:#212121;
+    border: 1px solid #999;
+    background: #fff;
+}
+.search_form input[type='text']::-webkit-input-placeholder{
+	color:#212121 !important;
+}
+.search_form input[type='submit']{
+    outline: none;
+    background: #fff;
+    display: inline-block;
+    color: #212121;
+    font-size: 14px;
+    border: 1px solid #999;
+    text-transform: uppercase;
+    padding: 10px 28px;
+}
+.search_form input[type='submit']:hover{
+	background:#fff;
+	border:1px solid #fff;
+	color:#212121;
+}
+.search_box{
+	visibility: hidden;
+}
+.search_box:checked~.search_form{
+    width: 500px;
+    height: 62px;
+    padding: 10px;
+    top: 44px;
+	transition: height 0.2s ease-out, top 0.2s ease-out, padding 0.2s ease-out, 0.3s width ease-out 0.2s;
+	-webkit-transition: height 0.2s ease-out, top 0.2s ease-out, padding 0.2s ease-out, 0.3s width ease-out 0.2s;
+}
+.search_box:checked~.search_form form{
+	opacity:1;
+	transition:0.3s all ease-out 0.5s;
+	-webkit-transition:0.3s all ease-out 0.5s;
+}
+label.icon-search span {
+    color: #BEBEBE;
+}
+
+.agileits_social_button ul li{
+	display:inline-block;
+	margin: 0 !important;
+}
+.agileits_social_button ul li a.facebook{
+	background: url(../images/img-sp.png) no-repeat -1px -130px #414141;
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+.agileits_social_button ul li a.facebook:hover{
+	background:url(../images/img-sp.png) no-repeat -1px -130px #5E5E5E;
+    display: block;
+}
+.agileits_social_button ul li a.twitter{
+	background: url(../images/img-sp.png) no-repeat -41px -130px #414141;
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+.agileits_social_button ul li a.twitter:hover{
+	background: url(../images/img-sp.png) no-repeat -41px -130px #5E5E5E;
+    display: block;
+}
+.agileits_social_button ul li a.google{
+	background: url(../images/img-sp.png) no-repeat -80px -130px #414141;
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+.agileits_social_button ul li a.google:hover{
+	background: url(../images/img-sp.png) no-repeat -80px -130px #5E5E5E;
+    display: block;
+}
+.agileits_social_button ul li a.pinterest{
+	background:url(../images/img-sp.png) no-repeat -123px -130px #414141;
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+.agileits_social_button ul li a.pinterest:hover{
+	background:url(../images/img-sp.png) no-repeat -123px -130px #5E5E5E;
+    display: block;
+}
+/*--//search--*/
