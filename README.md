@@ -1,2 +1,2 @@
-# heroku-peintio
+# Peintio
 Peintio on heroku
